@@ -1,0 +1,9 @@
+This script only works for Window.
+
+(1) pip install pywinauto
+
+(2) Open your Teams program
+
+(3) Execute the script (every 10 seconds auto mouse clicks happen)
+
+I built it with python 3.9
