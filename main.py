@@ -44,21 +44,21 @@ if __name__ == '__main__':
             print(f"[Log] Start to click the available Icon - iteration {iteration}")
             try:
                 find_teams_profile_status_button_and_click(teams_window)
-                time.sleep(0.5)  # 0.3~1초 정도 딜레이를 줘서 새 UI가 나타나도록 대기
+                time.sleep(0.5)  # delay for the subsequent elements appearing
                 find_status_button_and_click(teams_window)
                 time.sleep(0.5)
                 find_available_icon_and_click(teams_window)
                 time.sleep(0.5)
-                find_teams_profile_status_button_and_click(teams_window)  # 화면 초기화
+                find_teams_profile_status_button_and_click(teams_window)  # Initialize the screen
                 time.sleep(0.5)
-                time.sleep(10)  # 10초 대기 후 반복
+                time.sleep(10)  # Delay 10 secs
                 iteration += 1
             except Exception as e:
-                print(f"[Error] {e}")  # 로그 또는 파일 기록
-                input("Press Enter to exit...")  # 실행 결과 확인 후 종료
+                print(f"[Error] {e}")
+                input("Press Enter to exit...")
 
     except Exception as e:
         print(f"[Error] {e}")
-        input("Press Enter to exit...")  # 실행 결과 확인 후 종료
+        input("Press Enter to exit...")
 
-    input("Press Enter to exit...")  # 실행 결과 확인 후 종료
+    input("Press Enter to exit...")
