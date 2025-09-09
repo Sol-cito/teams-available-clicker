@@ -12,7 +12,7 @@ def find_available_icon_and_click(teams_window):
 
 def find_status_button_and_click(teams_window):
     for item in teams_window.descendants(control_type="MenuItem"):
-        if "Available, change status" in item.window_text():
+        if "change status" in item.window_text():
             print(f" (2) Clicking status option: {item.window_text()}")
             item.click_input()
             break
